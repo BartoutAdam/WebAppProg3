@@ -47,7 +47,40 @@
     </ul>
 <br>
 <a href="myCity.html">Learn about my favorite city, Casablanca</a>
+<hr>
+<hr>
 
+<h2>Code Snippet: LinkedList</h2>
+
+<p>
+  This snippet is from a LinkedList class built with singly linked nodes. It implements
+  the Iterable interface and uses a private inner class, LLIterator, to provide iteration
+  over the list. The class keeps references to the head and tail nodes along with a size
+  counter so that adding to either end can be done efficiently.
+</p>
+
+<pre>
+package Fall0811;
+
+import java.util.Iterator;
+
+import Summer08.Node;
+
+public class LinkedList implements Iterable {
+    private Node head;
+    private Node tail;
+    private int size;
+    
+    public Iterator iterator(){
+        return new LLIterator();
+    }
+    
+    private class LLIterator implements Iterator{
+</pre>
+
+<p>
+  <a href="https://www.cs.utexas.edu/~scottm/cs307/javacode/codeSamples/LinkedList.java">LinkedList.java Source Code</a>
+</p>
 
 
 
